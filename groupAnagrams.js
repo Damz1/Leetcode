@@ -3,13 +3,11 @@ let groupAnagrams = function (strs) {
 
   for (let str of strs) {
     const sorted = [...str].sort().join("");
-    console.log("sorted", sorted);
     if (anagrams[sorted]) {
       anagrams[sorted].push(str);
     } else {
       anagrams[sorted] = [str];
     }
-    console.log("anagrams", anagrams);
   }
 
   return Object.values(anagrams);
