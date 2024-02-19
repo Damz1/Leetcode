@@ -6,4 +6,9 @@ describe("romanToInt", () => {
     let output = 3;
     expect(romanToInt(input)).toBe(output);
   });
+  test("shoud return 58", () => {
+    let input = "LVIII";
+    let output = 58;
+    expect(romanToInt(input)).toBe(output);
+  });
 });
