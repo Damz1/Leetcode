@@ -9,11 +9,20 @@ let romanToInt = function (s) {
     M: 1000,
   };
 
-  let array = s.split("");
   let sum = 0;
+  let previousValue = 0;
 
-  for (let char of s) {
-    sum += romanNumerals[char];
+  for (let i = 0; i < s.length; i++) {
+    let currentChar = s[i];
+    let currentValue = romanNumerals[currentChar];
+
+    if (currentValue > previousValue) {
+      sum += currentValue - 2 * previousValue;
+    } else {
+      sum += romanNumerals[currentChar];
+    }
+
+    previousValue = currentValue;
   }
   return sum;
 };

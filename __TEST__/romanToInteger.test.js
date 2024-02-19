@@ -11,4 +11,9 @@ describe("romanToInt", () => {
     let output = 58;
     expect(romanToInt(input)).toBe(output);
   });
+  test("shoud return 58", () => {
+    let input = "MCMXCIV";
+    let output = 1994;
+    expect(romanToInt(input)).toBe(output);
+  });
 });
