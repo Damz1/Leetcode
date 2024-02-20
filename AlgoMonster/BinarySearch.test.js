@@ -30,9 +30,29 @@ describe("binary search", () => {
 });
 
 describe("binary boolean", () => {
-  test("return 3", () => {
+  test("return correct when middle is true", () => {
     input = [false, false, false, true, true];
     output = 3;
+    expect(binaryBoolean(input)).toBe(output);
+  });
+  test("return correct when last index only is true", () => {
+    input = [false, false, false, false, false, false, true];
+    output = 6;
+    expect(binaryBoolean(input)).toBe(output);
+  });
+  test("return 0 when first index is true", () => {
+    input = [true, true, true, true];
+    output = 0;
+    expect(binaryBoolean(input)).toBe(output);
+  });
+  test("return -1 when no true is found", () => {
+    input = [false, false, false, false];
+    output = -1;
+    expect(binaryBoolean(input)).toBe(output);
+  });
+  test("return -1 when array is empty", () => {
+    input = [];
+    output = -1;
     expect(binaryBoolean(input)).toBe(output);
   });
 });
