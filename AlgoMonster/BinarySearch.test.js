@@ -1,4 +1,4 @@
-const { binarySearch } = require("./BinarySearch");
+const { binarySearch, binaryBoolean } = require("./BinarySearch");
 
 describe("binary search", () => {
   test("should return correct for array of 30", () => {
@@ -26,5 +26,13 @@ describe("binary search", () => {
     let output = -1;
 
     expect(binarySearch(inputArr, inputTarget)).toBe(output);
+  });
+});
+
+describe("binary boolean", () => {
+  test("return 3", () => {
+    input = [false, false, false, true, true];
+    output = 3;
+    expect(binaryBoolean(input)).toBe(output);
   });
 });
