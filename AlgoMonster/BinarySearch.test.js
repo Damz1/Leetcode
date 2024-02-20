@@ -19,4 +19,12 @@ describe("binary search", () => {
 
     expect(binarySearch(inputArr, inputTarget)).toBe(output);
   });
+  test("should return correct for random array numbers", () => {
+    let inputArr = [15, 31, 58, 68, 87, 112, 128, 148, 159, 171];
+
+    let inputTarget = 200;
+    let output = -1;
+
+    expect(binarySearch(inputArr, inputTarget)).toBe(output);
+  });
 });
