@@ -5,7 +5,6 @@ describe("numJewelsInStones", () => {
     let jewels = "aA";
     let stones = "aAAbbbb";
     let output = 3;
-
     expect(numJewelsInStones(jewels, stones)).toBe(output);
   });
 
