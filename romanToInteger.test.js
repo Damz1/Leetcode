@@ -1,4 +1,4 @@
-const { romanToInt } = require("../romanToInteger");
+const { romanToInt } = require("./romanToInteger");
 
 describe("romanToInt", () => {
   test("should return 3 for III", () => {
