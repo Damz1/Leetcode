@@ -1,12 +1,18 @@
 const longestSubstring = (str) => {
-  let subString = "";
+  let maxLength = 0;
+  let currentSubstring = "";
 
   for (const char of str) {
-    if (!subString.includes(char)) {
-      subString = subString + char;
+    const index = currentSubstring.indexOf(char);
+    if (index !== -1) {
+      currentSubstring = currentSubstring.slice(index + 1);
     }
+    currentSubstring += char;
+
+    maxLength = Math.max(maxLength, currentSubstring.length);
   }
-  return subString.length;
+
+  return maxLength;
 };
 
 module.exports = { longestSubstring };

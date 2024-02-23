@@ -5,11 +5,11 @@ describe("length_of_longest_substring", () => {
     expect(longestSubstring("abcabcbb")).toBe(3);
   });
 
-  // test('Example 2: "bbbbb"', () => {
-  //   expect(longestSubstring("bbbbb")).toBe(1);
-  // });
+  test('Example 2: "bbbbb"', () => {
+    expect(longestSubstring("bbbbb")).toBe(1);
+  });
 
-  // test('Example 3: "pwwkew"', () => {
-  //   expect(longestSubstring("pwwkew")).toBe(3);
-  // });
+  test('Example 3: "pwwkew"', () => {
+    expect(longestSubstring("pwwkew")).toBe(3);
+  });
 });
