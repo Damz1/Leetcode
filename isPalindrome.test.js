@@ -16,4 +16,15 @@ describe("isPalindrome", () => {
   it("should return true for a single character string", () => {
     expect(isPalindrome("a")).toBe(true);
   });
+
+  it("should ignore non-alphanumeric characters", () => {
+    expect(isPalindrome("A man, a plan, a canal: Panama")).toBe(true);
+  });
+
+  it("should handle strings with non-alphanumeric characters properly", () => {
+    expect(isPalindrome("Able was I, ere I saw Elba!")).toBe(true);
+  });
+  it("should return true for a palindrome string with spaces and different cases", () => {
+    expect(isPalindrome("A man a plan a canal Panama")).toBe(true);
+  });
 });
