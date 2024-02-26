@@ -6,11 +6,9 @@ const removeDuplicates = (nums) => {
   let R = 1;
 
   while (R < n) {
-    console.log("nums", nums);
     if (nums[L] !== nums[R]) {
       L++;
       nums[L] = nums[R];
-      console.log("nums in 13", nums);
     }
     R++;
   }
