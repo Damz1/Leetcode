@@ -15,10 +15,10 @@ const equalFrequency = (word) => {
       differeceCount += firstElement - arrayFreq[i][1];
     }
   }
-  if (differeceCount > 1) {
-    return false;
+  if (differeceCount === 1) {
+    return true;
   }
-  return true;
+  return false;
 };
 
 module.exports = { equalFrequency };
