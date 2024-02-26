@@ -1,11 +1,14 @@
 const goodPairs = (nums) => {
+  let frequency = {};
   let count = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = i + 1; j < nums.length; j++) {
-      if (nums[i] === nums[j]) {
-        count++;
-      }
+  for (let num of nums) {
+    frequency[num] = (frequency[num] || 0) + 1;
+  }
+
+  for (let key in frequency) {
+    if (frequency[key] > 1) {
+      count += (frequency[key] * (frequency[key] - 1)) / 2;
     }
   }
   return count;
