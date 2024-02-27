@@ -1,23 +1,27 @@
 const equalFrequency = (word) => {
   let frequency = {};
-  for (char of word) {
+  for (const char of word) {
     frequency[char] = (frequency[char] || 0) + 1;
   }
-  //frequency = { a: 1, b: 1, c: 2 }
-  let differeceCount = 0;
-  let arrayFreq = Object.entries(frequency); //[ [ 'a', 1 ],[ 'b', 1 ],[ 'c', 2 ] ]
 
-  for (let i = 1; i < arrayFreq.length; i++) {
-    const firstElement = arrayFreq[0][1];
-    if (arrayFreq[i][1] > firstElement) {
-      differeceCount += arrayFreq[i][1] - firstElement;
-    } else if (arrayFreq[i][1] < firstElement) {
-      differeceCount += firstElement - arrayFreq[i][1];
-    }
-  }
-  if (differeceCount === 1) {
+  const counts = Object.values(frequency);
+  const maxCount = Math.max(...counts);
+  const minCount = Math.min(...counts);
+
+  const maxCountFrequency = counts.filter((count) => count === maxCount).length;
+  const minCountFrequency = counts.filter((count) => count === minCount).length;
+
+  if (maxCount === minCount && maxCount === 1) {
     return true;
   }
+
+  if (
+    (maxCount - minCount === 1 && maxCountFrequency === 1) ||
+    (minCount === 1 && minCountFrequency === 1)
+  ) {
+    return true;
+  }
+
   return false;
 };
 
