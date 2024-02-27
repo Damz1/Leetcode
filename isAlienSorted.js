@@ -4,8 +4,6 @@ function isAlienSorted(words, order) {
     dict.set(order[i], i);
   }
 
-  console.log(dict);
-
   for (let i = 0; i < words.length - 1; i++) {
     const word1 = words[i];
     const word2 = words[i + 1];
