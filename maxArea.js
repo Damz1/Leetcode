@@ -11,8 +11,7 @@ const maxArea = (height) => {
 
     if (currentLeftHeight < currentRightHeight) {
       left++;
-    }
-    if (currentRightHeight <= currentLeftHeight) {
+    } else {
       right--;
     }
 
