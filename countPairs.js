@@ -1,11 +1,16 @@
 const countPairs = (nums, target) => {
-  // (i, j) where 0 <= i < j < n and nums[i] + nums[j] < target.
+  let sortedNums = nums.sort();
+  let left = 0;
   let n = nums.length;
+  let right = n - 1;
   let count = 0;
 
-  for (let i = 0; i < nums.length; i++) {
-    for (let j = 0; j < nums.length; j++) {
-      if (0 <= i && i < j && j < n && nums[i] + nums[j] < target) count++;
+  while (left < right) {
+    if (nums[left] + nums[right] >= target) {
+      right--;
+    } else if (nums[left] + nums[right] < target) {
+      count += right - left;
+      left++;
     }
   }
   return count;
