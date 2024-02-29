@@ -15,4 +15,7 @@ describe("countPairs", () => {
   it("handles cases with duplicate elements", () => {
     expect(countPairs([1, 1, 1, 1], 3)).toBe(6);
   });
+  it("handles cases with duplicate elements", () => {
+    expect(countPairs([-6, 2, 5, -2, -7, -1, 3], -2)).toBe(10);
+  });
 });

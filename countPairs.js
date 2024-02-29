@@ -1,5 +1,5 @@
 const countPairs = (nums, target) => {
-  let sortedNums = nums.sort();
+  nums.sort((a, b) => a - b);
   let left = 0;
   let n = nums.length;
   let right = n - 1;
