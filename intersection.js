@@ -2,12 +2,7 @@ const intersection = (nums1, nums2) => {
   let sortedNums1 = nums1.sort((a, b) => a - b);
   let sortedNums2 = nums2.sort((a, b) => a - b);
 
-  let lengthOfShortesArray =
-    sortedNums1.length < sortedNums2.length
-      ? sortedNums1.length
-      : sortedNums2.length;
-
-  if (lengthOfShortesArray === 0) {
+  if (!nums1.length || !nums2.length) {
     return [];
   }
 
@@ -29,5 +24,4 @@ const intersection = (nums1, nums2) => {
   return [...new Set(result)];
 };
 
-intersection([1, 2, 2, 1], [2, 2]);
 module.exports = { intersection };
