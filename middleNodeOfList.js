@@ -1,4 +1,4 @@
-var middleNode = function (head) {
+const middleNode = function (head) {
   let slow = head;
   let fast = head;
 
