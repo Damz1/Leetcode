@@ -30,7 +30,4 @@ const maxDepthParentheses = (s) => {
   return -1;
 };
 
-let s = "(1)+((2))+(((3)))";
-// Output: 3
-
-console.log(maxDepthParentheses(s));
+module.exports = { maxDepthParentheses };
