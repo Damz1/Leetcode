@@ -1,7 +1,7 @@
 const { divisorSubstrings } = require("./divisorSubstrings");
 
 describe("K-Beauty of a Number", () => {
-  it("Case 1: Basic example", () => {
+  it.only("Case 1: Basic example", () => {
     expect(divisorSubstrings(240, 2)).toEqual(2);
   });
 
