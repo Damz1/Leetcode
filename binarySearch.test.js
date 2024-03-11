@@ -18,6 +18,10 @@ describe("binarySearch", () => {
     ).toBe(500);
   });
 
+  it("should return 0 if only item is the target", () => {
+    expect(binarySearch([5], 5)).toBe(0);
+  });
+
   it("should return -1 if the target is smaller than the smallest element in the array", () => {
     expect(binarySearch([1, 2, 3, 4, 5], -1)).toBe(-1);
   });
