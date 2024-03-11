@@ -12,6 +12,7 @@
  * @param {number} high
  * @return {number}
  */
+
 const rangeSumBST = function (root, low, high) {
   if (!root) return 0;
   let sum = 0;
