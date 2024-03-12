@@ -22,3 +22,12 @@ const depthFirstValues = (root) => {
 
   return visited;
 };
+
+//problem from struct.net website
+const depthFirstValuesRecursive = (root) => {
+  if (!root) return [];
+
+  const leftValues = depthFirstValuesRecursive(root.left);
+  const rightValues = depthFirstValuesRecursive(root.right);
+  return [root.val, ...leftValues, ...rightValues];
+};
