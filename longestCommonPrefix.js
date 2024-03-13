@@ -5,12 +5,15 @@
 
 var longestCommonPrefix = function (strs) {
   if (!strs.length) return "";
+  //sort the array of words
   strs.sort();
 
+  //first and last word of the sorted array
   let first = strs[0];
   let last = strs[strs.length - 1];
   let prefix = "";
 
+  //compare the first char in both, if equal add to prefix otherwise break and return prefix
   for (let i = 0; i < first.length; i++) {
     if (first[i] === last[i]) {
       prefix += first[i];
