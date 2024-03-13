@@ -1,3 +1,4 @@
+//problem from struct.net website
 class Node {
   constructor(val) {
     this.val = val;
@@ -23,7 +24,6 @@ const depthFirstValues = (root) => {
   return visited;
 };
 
-//problem from struct.net website
 const depthFirstValuesRecursive = (root) => {
   if (!root) return [];
 
