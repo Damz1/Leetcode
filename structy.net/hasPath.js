@@ -31,3 +31,15 @@ const hasPath = (graph, src, dst) => {
 
 console.log(hasPath(graph, "f", "k")); //true
 console.log(hasPath(graph, "f", "j")); // false
+
+const hasPathRecursion = (graph, src, dst) => {
+  if (src === dst) return true;
+
+  for (const neighbour of graph[src]) {
+    if (hasPathRecursion(graph, neighbour, dst)) return true;
+  }
+  return false;
+};
+
+console.log(hasPathRecursion(graph, "f", "k")); //true
+console.log(hasPathRecursion(graph, "f", "j")); // false
