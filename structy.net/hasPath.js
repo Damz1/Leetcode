@@ -32,8 +32,9 @@ const hasPath = (graph, src, dst) => {
 console.log(hasPath(graph, "f", "k")); //true
 console.log(hasPath(graph, "f", "j")); // false
 
+//has path using recursion
 const hasPathRecursion = (graph, src, dst) => {
-  if (src === dst) return true;
+  if (src === dst) return true; //base case
 
   for (const neighbour of graph[src]) {
     if (hasPathRecursion(graph, neighbour, dst)) return true;
