@@ -1,4 +1,4 @@
-const { binarySearch } = require("./binarySearch");
+const { binarySearch } = require("../binarySearch");
 
 describe("binarySearch", () => {
   it("should return the index of the target if it exists in the array", () => {

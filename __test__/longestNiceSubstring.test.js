@@ -1,4 +1,4 @@
-const { longestNiceSubstring } = require("./longestNiceSubstring");
+const { longestNiceSubstring } = require("../longestNiceSubstring");
 
 describe("longestNiceSubstring", () => {
   it('returns the longest nice substring for "YazaAay"', () => {

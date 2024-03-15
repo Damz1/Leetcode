@@ -1,4 +1,4 @@
-const { isPowerOfTwo } = require("./isPowerOfTwo");
+const { isPowerOfTwo } = require("../isPowerOfTwo");
 
 describe("isPowerOfTwo", () => {
   test("should return true for 1", () => {

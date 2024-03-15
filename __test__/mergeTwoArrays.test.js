@@ -1,4 +1,4 @@
-const { mergeTwoarrays } = require("./mergeTwoarrays");
+const { mergeTwoarrays } = require("../mergeTwoarrays");
 
 describe("mergeTwoarrays", () => {
   test("should return empty if input is empty", () => {

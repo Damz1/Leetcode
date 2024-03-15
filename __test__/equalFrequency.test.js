@@ -1,4 +1,4 @@
-const { equalFrequency } = require("./equalFrequency");
+const { equalFrequency } = require("../equalFrequency");
 
 describe("equalFrequency", () => {
   test("should return true for equal frequency of all chars", () => {

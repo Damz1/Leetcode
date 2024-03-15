@@ -1,4 +1,4 @@
-const { countGoodSubstrings } = require("./countGoodSubstrings");
+const { countGoodSubstrings } = require("../countGoodSubstrings");
 
 describe("countGoodSubstrings", () => {
   test("should return 1 in a simple 3 chars string", () => {

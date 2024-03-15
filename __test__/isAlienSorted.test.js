@@ -1,4 +1,4 @@
-const { isAlienSorted } = require("./isAlienSorted");
+const { isAlienSorted } = require("../isAlienSorted");
 
 describe("isAlienSorted", () => {
   it("should return true if words are sorted lexicographically in the alien language", () => {

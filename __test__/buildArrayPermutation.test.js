@@ -1,4 +1,4 @@
-const { buildArray } = require("./buildArrayPermutation");
+const { buildArray } = require("../buildArrayPermutation");
 
 describe("buildArray", () => {
   it("should return the correct array according to the given permutation", () => {

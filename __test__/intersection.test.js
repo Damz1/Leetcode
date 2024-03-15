@@ -1,4 +1,4 @@
-const { intersection } = require("./intersection");
+const { intersection } = require("../intersection");
 
 describe("intersection", () => {
   test("should return [2]", () => {

@@ -1,4 +1,4 @@
-const { numJewelsInStones } = require("./numJewelsInStones");
+const { numJewelsInStones } = require("../numJewelsInStones");
 
 describe("numJewelsInStones", () => {
   it("should return 3", () => {

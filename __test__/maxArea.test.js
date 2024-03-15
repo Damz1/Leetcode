@@ -1,4 +1,4 @@
-const { maxArea } = require("./maxArea");
+const { maxArea } = require("../maxArea");
 
 describe("maxArea", () => {
   test("should return 49", () => {

@@ -1,4 +1,4 @@
-const { divisorSubstrings } = require("./divisorSubstrings");
+const { divisorSubstrings } = require("../divisorSubstrings");
 
 describe("K-Beauty of a Number", () => {
   it.only("Case 1: Basic example", () => {

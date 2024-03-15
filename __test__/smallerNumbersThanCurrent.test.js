@@ -1,4 +1,4 @@
-const { smallerNumbersThanCurrent } = require("./smallerNumbersThanCurrent");
+const { smallerNumbersThanCurrent } = require("../smallerNumbersThanCurrent");
 
 test("Example 1", () => {
   const nums = [8, 1, 2, 2, 3];

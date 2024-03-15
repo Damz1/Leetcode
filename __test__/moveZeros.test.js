@@ -1,4 +1,4 @@
-const { moveZeros } = require("./moveZeros");
+const { moveZeros } = require("../moveZeros");
 
 describe("moveZeros", () => {
   it("should move all zeroes to the end while maintaining relative order for [0,1,0,3,12]", () => {

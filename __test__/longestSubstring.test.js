@@ -1,4 +1,4 @@
-const { longestSubstring } = require("./longestSubstring");
+const { longestSubstring } = require("../longestSubstring");
 
 describe("length_of_longest_substring", () => {
   test('Example 1: "abcabcbb"', () => {

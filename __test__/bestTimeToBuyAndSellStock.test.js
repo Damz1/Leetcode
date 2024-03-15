@@ -1,4 +1,4 @@
-const { maxProfit } = require("./bestTimeToBuyAndSellStock");
+const { maxProfit } = require("../bestTimeToBuyAndSellStock");
 
 describe("maxProfit", () => {
   test("should return 5", () => {

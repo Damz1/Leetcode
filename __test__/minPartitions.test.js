@@ -1,4 +1,4 @@
-const { minPartitions } = require("./minPartitions");
+const { minPartitions } = require("../minPartitions");
 
 describe("minPartitions", () => {
   test("return 1 if n is deci-binary", () => {

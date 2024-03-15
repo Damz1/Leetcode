@@ -1,4 +1,4 @@
-const { defandIPaddr } = require("./IPaddress");
+const { defandIPaddr } = require("../IPaddress");
 
 describe("defandIPaddr", () => {
   test("should return correct for 1.1.1.1", () => {

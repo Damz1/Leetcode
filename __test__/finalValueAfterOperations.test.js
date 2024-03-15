@@ -1,4 +1,4 @@
-const { finalValueAfterOperations } = require("./finalValueAfterOperations");
+const { finalValueAfterOperations } = require("../finalValueAfterOperations");
 
 describe("finalvalue", () => {
   test("should return 1", () => {

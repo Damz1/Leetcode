@@ -1,4 +1,4 @@
-const { goodPairs } = require("./goodPairs");
+const { goodPairs } = require("../goodPairs");
 
 describe("goodPairs", () => {
   test("Example 1: Input: nums = [1,2,3,1,1,3], Output: 4", () => {

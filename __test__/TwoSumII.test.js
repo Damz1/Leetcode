@@ -1,4 +1,4 @@
-const { twoSum } = require("./TwoSumII");
+const { twoSum } = require("../TwoSumII");
 
 describe("twoSum", () => {
   it("should return [1,2] for numbers = [2,7,11,15] and target = 9", () => {

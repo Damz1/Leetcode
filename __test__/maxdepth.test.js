@@ -1,4 +1,4 @@
-const { maxDepthParentheses } = require("./maxDepth");
+const { maxDepthParentheses } = require("../maxDepth");
 
 describe("maxDepthParentheses", () => {
   test("Example 1", () => {

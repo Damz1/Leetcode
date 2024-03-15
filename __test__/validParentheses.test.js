@@ -1,4 +1,4 @@
-const { isValid } = require("./ValidParentheses");
+const { isValid } = require("../ValidParentheses");
 
 describe("isValid function", () => {
   test("Valid parentheses: ()", () => {

@@ -1,4 +1,4 @@
-const { removeDuplicates } = require("./removeDuplicatesFromSortedArray");
+const { removeDuplicates } = require("../removeDuplicatesFromSortedArray");
 
 describe("removeDuplicates", () => {
   test("should return the correct number of unique elements and modify the array correctly", () => {

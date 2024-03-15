@@ -1,4 +1,4 @@
-const { decrypt } = require("./defuseTheBomb");
+const { decrypt } = require("../defuseTheBomb");
 
 describe("decrypt", () => {
   test("Decrypt code with k > 0", () => {

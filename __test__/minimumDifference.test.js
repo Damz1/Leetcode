@@ -1,4 +1,4 @@
-const { minimumDifference } = require("./minimumDifference");
+const { minimumDifference } = require("../minimumDifference");
 
 describe("minimumDifference", () => {
   it("returns 0 for input [90] and k = 1", () => {

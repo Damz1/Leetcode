@@ -1,4 +1,4 @@
-const { findMaxAverage } = require("./maxAvgSubarray");
+const { findMaxAverage } = require("../maxAvgSubarray");
 
 describe("findMaxAverage", () => {
   test("Example 1", () => {
