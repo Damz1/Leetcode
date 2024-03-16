@@ -1,4 +1,4 @@
-const { threeSum } = require("../threeSum"); //
+const { threeSum } = require("../threeSum");
 
 describe("Three Sum", () => {
   test("Example 1", () => {
